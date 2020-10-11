@@ -1,0 +1,365 @@
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background-color: #102226;
+}
+
+.cabecalho {
+  background-color: #0f1c26;
+  padding: 12px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.cabecalho .centro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1278px;
+  width: 100%;
+}
+
+.cabecalho .centro .left {
+  display: flex;
+  align-items: center;
+  max-width: 1278px;
+}
+
+.cabecalho input {
+  height: 56px;
+  margin-left: 24px;
+  background-color: #171b1e;
+  color: white;
+  border: 0;
+  padding: 12px;
+  flex: 0 1 456px;
+  width: 100%;
+}
+
+.cabecalho .input {
+  margin-left: 24px;
+  position: relative;
+}
+
+.cabecalho .input img {
+  position: absolute;
+  right: 12px;
+  top: 16px;
+}
+
+.cabecalho a {
+  display: flex;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cabecalho a img {
+  margin-right: 6px;
+}
+
+.cabecalho .usuario {
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho .usuario {
+  margin-left: 6px;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  padding: 24px 60px;
+}
+
+.principal {
+  flex: 0 1 910px;
+}
+.sacola {
+  flex: 0 1 259px;
+}
+
+.conteudo .centro {
+  max-width: 1278px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cupom {
+  position: relative;
+}
+
+.cupom-overlay {
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  padding: 6px 10px 12px;
+}
+
+.cupom .coluna {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cupom .coluna:first-child {
+  margin-right: 36px;
+}
+
+.cupom .chama {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 150%;
+}
+
+.cupom .finaliza-em {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 150%;
+  margin-top: 15px;
+}
+
+.contador,
+.cupom2 {
+  display: flex;
+  align-items: center;
+}
+
+.contador img,
+.cupom2 img {
+  margin-right: 6px;
+}
+
+.dinheiro {
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+  height: 120%;
+}
+
+.cupom > img {
+  width: 100%;
+}
+.filmes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+}
+
+.filmes li {
+  position: relative;
+  margin: 8px;
+  flex: 0 1 168px;
+}
+
+.filmes li > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.filmes li .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 6px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.filmes li .overlay > img {
+  align-self: flex-start;
+}
+
+.filmes li .overlay .metadados {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.filmes li .overlay h3 {
+  margin: 0;
+}
+
+.filmes li .overlay .avaliacao {
+  color: #fbcd6e;
+  font-size: 12px;
+}
+
+.filmes li .overlay button {
+  display: flex;
+  background-color: #a785ed;
+  padding: 6px;
+  justify-content: space-between;
+  border: 0;
+  color: white;
+}
+
+.filtros {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.filtros button {
+  flex: 0 1 168px;
+  opacity: 0.2;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 6px 12px;
+  margin-right: 20px;
+}
+
+.filtros button:last-child {
+  margin-right: 0;
+}
+
+.filtros button .selecionado {
+  opacity: 1;
+  background-color: rgba(225, 131, 200, 0.2);
+  border-color: #e183c8;
+  color: #e183c8;
+}
+
+.sacola {
+  margin-left: 24px;
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.cabecalho-sacola {
+  background-color: #a785ed;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sacola-vazia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.conteudo-sacola {
+  padding: 24px 12px;
+}
+
+.sacola-vazia .titulo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-cupom span {
+  font-size: 12px;
+}
+
+.input-cupom input {
+  background-color: #0b1217;
+  border: 0;
+  width: 270px;
+  height: 40px;
+  margin-top: 2px;
+  color: white;
+  padding: 6px;
+}
+
+.input-cupom div {
+  position: relative;
+}
+
+.input-cupom img {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+}
+
+.itens-sacola {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+
+.itens-sacola li {
+  display: flex;
+  margin-top: 12px;
+}
+
+.itens-sacola li:first-child {
+  margin-top: 0;
+}
+
+.itens-sacola li .metadados {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itens-sacola li > img {
+  height: 67px;
+  width: auto;
+  margin-right: 6px;
+}
+
+.itens-sacola li button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  height: 10px;
+  width: 15px;
+}
+
+.itens-sacola li button img {
+  height: 10px;
+  width: 15px;
+  margin-right: 6px;
+}
+
+.itens-sacola li .acoes {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.itens-sacola li .acoes span {
+  margin: 0 6px;
+}
+
+.comprar {
+  background-color: #e183c8;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+  border: 0;
+  margin-top: 24px;
+  font-weight: bold;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HobbyFlix</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="cabecalho">
+      <div class="centro">
+        <div class="left">
+          <img src="imagens/logo.png" alt="HobbyFlix" />
+          <div class="input">
+            <input placeholder="Pesquise Filmes" />
+            <img src="imagens/Search.png" alt="" />
+          </div>
+        </div>
+
+        <a href="#">
+          <img src="imagens/Bookmark.png" alt="" />
+          Favoritos
+        </a>
+
+        <a href="#">
+          <img src="imagens/Ticket.png" alt="" />
+          Promoções
+        </a>
+        <div class="usuario">
+          Ola, Misael
+          <img src="imagens/perfil1.png" height="56 px" width="45 px" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="conteudo">
+      <div class="centro">
+        <div class="principal">
+          <div class="cupom">
+            <img src="imagens/cupom.png" alt="" />
+            <div class="cupom-overlay">
+              <div class="coluna">
+                <div class="chama">Aproveite agora!</div>
+                <div class="cupom2">
+                  <img src="imagens/ICON.png" />
+                  Cupom: HTMLNAOEHLINGUAGEM
+                </div>
+              </div>
+              <div class="coluna">
+                <div class="finaliza-em">Finaliza em:</div>
+                <div class="contador">
+                  <img
+                    src="imagens/Time Square.png"
+                    height="40px"
+                    width="40px"
+                  />
+                  00:05:00
+                </div>
+              </div>
+
+              <img class="dinheiro" src="imagens/money.png" />
+            </div>
+          </div>
+
+          <div class="listagemTop">
+            <h2>Top filmes</h2>
+            <ul class="filmes"></ul>
+          </div>
+
+          <div class="listagemGeral">
+            <h2>Filmes</h2>
+
+            <div class="filtros">
+              <button class="selecionado">Todos</button>
+            </div>
+            <ul class="filmes"></ul>
+          </div>
+        </div>
+
+        <div class="sacola">
+          <div class="cabecalho-sacola">
+            <img src="imagens/Bag.png" />
+            Sacola
+          </div>
+          <div class="conteudo-sacola">
+            <ul hidden class="itens-sacola"></ul>
+
+            <div class="sacola-vazia">
+              <div class="titulo">Sua sacola está vazia</div>
+              <div class="subtitulo">Adicione filmes agora</div>
+              <img src="imagens/Social Media.png" />
+            </div>
+            <label class="input-cupom">
+              <span> Insira seu cupom</span>
+              <div>
+                <input placeholder="Cupom de desconto" />
+                <img src="imagens/Discount.png" />
+              </div>
+            </label>
+            <button hidden class="comprar">
+              <span>Confirme seus dados</span>
+              <span>R$ <span class="preco">4,98</span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
